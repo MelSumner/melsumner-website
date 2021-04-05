@@ -2,10 +2,10 @@
   "name": "melsumner-website",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for melsumner-website goes here",
-  "repository": "",
+  "description": "Melanie Sumner's Website",
+  "repository": "https://github.com/MelSumner/melsumner-website.git",
   "license": "MIT",
-  "author": "",
+  "author": "Melanie Sumner <melaniersumner@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -47,8 +47,7 @@
     "ember-qunit": "^5.1.2",
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.25.1",
-    "ember-template-lint": "^2.18.1",
-    "ember-welcome-page": "^4.0.0",
+    "ember-template-lint": "^2.21.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-ember": "^10.2.0",
