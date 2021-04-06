@@ -98,10 +98,10 @@ body {
   color: #1d2c36;
   @apply min-h-screen;
 	background-image: url("/assets/images/site-background.svg");
+	background-attachment: fixed;
+	background-position: bottom left, 0px 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* background-attachment: fixed; */
-	background-position: bottom left, 0px 0px;
   background-origin: border-box;
   font-size: 18px;
   line-height: 1.2;
