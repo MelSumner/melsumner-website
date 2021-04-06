@@ -1,0 +1,112 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "components.css";
+
+@import "tailwindcss/utilities";
+@import "utilities.css";
+
+@font-face {
+  font-family: 'analogueitalic';
+  src: url('/assets/fonts/analogue-italic-webfont.woff2') format('woff2'),
+       url('/assets/fonts/analogue-italic-webfont.woff') format('woff'),
+       url('/assets/fonts/analogue-italic-webfont.ttf') format('truetype'),
+       url('/assets/fonts/analogue-italic-webfont.svg#analogueitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'analogueregular';
+  src: url('/assets/fonts/analogue-webfont.woff2') format('woff2'),
+       url('/assets/fonts/analogue-webfont.woff') format('woff'),
+       url('/assets/fonts/analogue-webfont.ttf') format('truetype'),
+       url('/assets/fonts/analogue-webfont.svg#analogueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-blue {
+  color: #90bacb;
+}
+.text-blue-lighter {
+  color: #c6dce5;
+}
+.text-blue-lightest {
+  color: #ddebee;
+}
+.text-blue-darker {
+  color: #3b6383;
+}
+.text-blue-darkest {
+  color: #1d2c36;
+}
+.text-orange {
+  color: #ae4225;
+}
+.text-orange-darker {
+  color: #582215;
+}
+.text-orange-lighter {
+  color: #bc6935;
+}
+.text-beige {
+  color: #eed7a5;
+}
+.text-beige-lighter {
+  color: #f7efdc;
+}
+.bg-blue {
+  background-color: #90bacb;
+}
+.bg-blue-lighter {
+  background-color: #c6dce5;
+}
+.bg-blue-lightest {
+  background-color: #ddebee;
+}
+.bg-blue-darker {
+  background-color: #3b6383;
+}
+.bg-blue-darkest {
+  background-color: #1d2c36;
+}
+.bg-orange {
+  background-color: #ae4225;
+}
+.bg-orange-darker {
+  background-color: #582215;
+}
+.bg-orange-lighter {
+  background-color: #bc6935;
+}
+.bg-beige {
+  background-color: #eed7a5;
+}
+.bg-beige-lighter {
+  background-color: #f7efdc;
+}
+
+
+h1 {
+  font-family: 'analogueregular';
+  @apply text-5xl;
+}
+
+body {
+  background-color: #c6dce5;
+  color: #1d2c36;
+  @apply min-h-screen;
+	background-image: url("/assets/images/site-background.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom left, 0px 0px;
+  background-origin: border-box;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+main {
+  @apply min-h-screen;
+}
