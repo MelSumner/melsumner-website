@@ -1,0 +1,27 @@
+{{page-title "Melanie Sumner's Talks"}}
+
+<article>
+    <h2 class="my-4">Talks</h2>
+    <p class="mb-8">
+        Advocacy is a big part of accessibility; I quickly came to realize that if I wanted to effectively affect change, I would need to be willing to put ideas out there, in public.
+        So, I decided to get over myself (stagefright, ego, "oh my god does my voice really sound like that??" etc.) and started giving talks.
+        Here is a selection of the talks I've given.
+    </p>
+    <div class="cards">
+        <ul>
+            {{#each @model as | talk |}}
+                <li class="card">
+                    <div class="img">
+                        <img src="{{talk.img}}" alt="" role="presentation">
+                    </div>
+                    <div class="text">
+                        <h3><a href="{{talk.url}}">{{talk.title}}</a></h3>
+                        <p>{{talk.desc}}</p>
+                        <small>Given at {{talk.conf}}</small>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+    <p class="mt-8">Interested in having me speak at your event? Email melsumner at fastmail dot com for more information.</p>
+</article>
