@@ -92,13 +92,18 @@ body {
   color: #1d2c36;
   font-size: 18px;
   line-height: 1.2;
-  background-image: url("/assets/images/site-background.svg");
-	background-attachment: fixed;
-	background-position: bottom left, 0px 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-  background-origin: border-box;
   @apply min-h-screen;
+}
+
+@media (min-width: 780px) {
+  body {
+    background-image: url("/assets/images/site-background.svg");
+    background-attachment: fixed;
+    background-position: bottom left, 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+  }
 }
 
 main {
