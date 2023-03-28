@@ -73,6 +73,6 @@
   },
   "dependencies": {
     "ember-cli-netlify": "^0.4.1",
-    "tailwindcss": "2.1.4"
+    "tailwindcss": "2.2.19"
   }
 }
