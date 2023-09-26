@@ -1,10 +1,10 @@
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
-@import "components.css";
+/* @import "components.css"; */
 
 @import "tailwindcss/utilities";
-@import "utilities.css";
+/* @import "utilities.css"; */
 
 .text-blue {
   color: #90bacb;
@@ -132,10 +132,14 @@ p a {
 main article {
   background-color: white;
   border-radius: 4px;
+  height: fit-content;
+  min-height: 100vh;
   opacity: 0.8;
-  @apply 
-  p-8
-  mb-8;
+}
+.article__footer {
+  margin-top: 5rem;
+  border-top: 1px solid gray;
+
 }
 
 .intro {
