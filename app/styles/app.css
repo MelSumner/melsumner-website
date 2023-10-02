@@ -518,9 +518,15 @@ main article {
   border-radius: .25rem;
   display: flex;
   flex-direction: column;
-  min-height: 23rem;
   height: fit-content;
 }
+
+@media (min-width:728px) {
+  .card {
+    min-height: 23rem;
+  }
+}
+
 .card--talk {
   min-height: 30rem;
 }
@@ -693,4 +699,9 @@ main article {
   margin-top: -1.2rem;
   margin-bottom: 1.618rem;
   display: block;
+}
+
+footer {
+  border-top: 2px solid #C7C3BE;
+  margin-top: 2rem;
 }
