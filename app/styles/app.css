@@ -451,7 +451,8 @@ main article {
 
 .card:focus-within,
 .card:hover {
-  box-shadow: 0 0 0 .25rem
+  border: 2px solid var(--contrast);
+  box-shadow: 0 0 0 .25rem var(--contrast-light);
 }
 
 .card:focus-within a:focus {
