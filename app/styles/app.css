@@ -298,9 +298,17 @@ header {
   justify-content: space-between
 }
 
-nav {
+header nav {
+  display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 32rem) {
+  header nav {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 nav ul {
@@ -311,9 +319,16 @@ nav ul {
 }
 
 nav ul li a {
-  padding: 1rem
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
 }
 
+@media (min-width: 32rem) {
+  nav ul li a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
 nav ul li a:hover,
 p a {
   text-decoration: underline
@@ -330,8 +345,18 @@ footer a:focus-visible {
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 1
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media (min-width:32rem) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
