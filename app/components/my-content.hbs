@@ -1,4 +1,4 @@
-<article>
+<article class="article--mycontent">
   <p class='intro'>
     My goal: make it easier to build accessible websites.
   </p>
@@ -8,24 +8,22 @@
     <ModeMan />
   {{/if}}
 
-  <div class='article__footer flex items-center pt-3'>
+  <div class='article__footer flex items-center'>
     <button
       aria-pressed='{{if this.isPressed "true" "false"}}'
       {{on 'click' this.toggleButton}}
       type='button'
-      class='{{if this.isPressed "bg-indigo-600" "bg-gray-200"}}
-        relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2'
-      aria-labelledby='annual-billing-label'
+      class='relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-contrast focus:ring-offset-2 {{if this.isPressed "bg-contrast" "bg-secondary"}}'
+      aria-labelledby='switch-mode'
     >
 
       <span
         aria-hidden='true'
-        class='{{if this.isPressed "translate-x-5" "translate-x-0"}}
-          pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
+        class='pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out {{if this.isPressed "translate-x-5" "translate-x-0"}}'
       ></span>
     </button>
-    <span class='ml-3 text-sm' id='annual-billing-label'>
-      <span class='font-medium text-gray-900'>Switch to Mel Mode*</span>
+    <span class='ml-3 text-sm' id='switch-mode'>
+      <span>Switch to <i>Mel Mode</i>*</span>
     </span>
   </div>
 </article>

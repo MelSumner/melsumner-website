@@ -1,7 +1,15 @@
+@import "utilities.css";
+
 :root {
   --bg-color: #c7c3be;
+  --secondary: rgb(199, 195, 190);
+  --primary: rgb(47, 72, 88);
+  --contrast:rgb(193, 85, 78);
+  --contrast-light: ;
+  --link-on-primary: #7FD1AE; 
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 *,
 ::after,
 ::backdrop,
@@ -24,7 +32,7 @@
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000
 }
-/* some reset things */
+
 button,
 h1,
 h2,
@@ -100,7 +108,7 @@ ul {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  border-color: #e5e7eb
+  /* border-color: #e5e7eb */
 }
 
 ::after,
@@ -120,12 +128,12 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.2;
-  background-color: #2F4858;
-  color: #C7C3BE;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 h1 {
-  color: #C7C3BE;
+  color: var(--secondary);
 }
 
 h1,
@@ -303,19 +311,19 @@ nav ul li a {
   border-width: 2px
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity))
+.bg-secondary {
+  background-color: var(--secondary);
 }
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity))
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-contrast {
+  background-color: var(--contrast);
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -324,7 +332,7 @@ nav ul li a {
 
 .px-4 {
   padding-left: 1rem;
-  padding-right: 1rem
+  padding-right: 1rem;
 }
 
 .py-4 {
@@ -389,15 +397,6 @@ nav ul li a {
   font-weight: 700
 }
 
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity))
-}
-
-.text-blue-darkest {
-  color: #1d2c36;
-}
-
 .underline {
   text-decoration-line: underline
 }
@@ -431,7 +430,7 @@ p {
   line-height: 1.5
 }
 p a {
-  color: #7FD1AE;
+  color: var(--link-on-primary);
 }
 
 header {
@@ -481,10 +480,12 @@ h3 {
 main article {
   padding-top: 3rem;
 }
-
+.article--mycontent {
+  min-height: fit-content;
+}
 .article__footer {
-  margin-top: 5rem;
-  border-top: 1px solid gray
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
 }
 
 .intro {
@@ -511,9 +512,7 @@ main article {
 
 .card {
   background-color: #E7E7E4;
-  /* color: #2F4858; */
   color: #446167;
-  /* color: #3B5359; */
   border: 1px solid;
   border-radius: .25rem;
   display: flex;
@@ -540,13 +539,13 @@ main article {
 
 .card h3 {
   /* color: #446167; */
-  color: #2F4858;
+  color: var(--primary);
 }
 
 
 
 .card p {
-  max-width: 60ch
+  max-width: 60ch;
 }
 
 .card .img {
@@ -603,12 +602,30 @@ main article {
 .card .text>:last-child {
   margin-top: auto;
   padding-top: .75rem;
-  color: #243844;
+  color: var(--primary);
 }
 
 .focus\:outline-none:focus {
   outline: transparent solid 2px;
   outline-offset: 2px
+}
+
+.bg-secondary.focus\:ring-contrast:focus {
+  outline-width: 2px;
+  outline-color: var(--secondary);
+  outline-offset: 2px;
+  border-color: var(--contrast);
+}
+
+.bg-contrast.focus\:ring-contrast:focus {
+  outline-width: 2px;
+  outline-color: var(--contrast);
+  outline-offset: 2px;
+  border-color: white;
+}
+
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
 }
 
 .focus\:ring-2:focus {
@@ -617,19 +634,12 @@ main article {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
 }
 
-.focus\:ring-indigo-600:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity))
-}
 
-.focus\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px
-}
 
 @media (min-width: 640px) {
   .sm\:px-6 {
     padding-left: 1.5rem;
-    padding-right: 1.5rem
+    padding-right: 1.5rem;
   }
 }
 
@@ -703,5 +713,10 @@ main article {
 
 footer {
   border-top: 2px solid #C7C3BE;
-  margin-top: 2rem;
+}
+
+.mode--man p:first-of-type, 
+.mode--mel p:first-of-type {
+  color: #FE9990;
+  font-style: italic;
 }
