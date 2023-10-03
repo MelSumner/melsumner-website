@@ -387,6 +387,7 @@ h3 {
 
 main article {
   padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .article--mycontent {
   min-height: fit-content;
@@ -397,12 +398,15 @@ main article {
 }
 
 .intro {
-  font-size: 2rem;
-  line-height: 1
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
-.card+.card {
-  margin-top: 1.5rem
+@media (min-width:60rem) {
+  .intro {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @supports (display: grid) {
@@ -411,10 +415,6 @@ main article {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem
-  }
-
-  .card+.card {
-    margin-top: 0
   }
 }
 
@@ -428,7 +428,7 @@ main article {
   height: fit-content;
 }
 
-@media (min-width:728px) {
+@media (min-width:45rem) {
   .card {
     min-height: 23rem;
   }
@@ -446,14 +446,12 @@ main article {
 }
 
 .card h3 {
-  /* color: #446167; */
   color: var(--primary);
+  font-size: 1.125rem;
 }
-
-
-
 .card p {
   max-width: 60ch;
+  font-size: 1rem;
 }
 
 .card .img {
