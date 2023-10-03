@@ -298,6 +298,30 @@ header {
   justify-content: space-between
 }
 
+header h1 {
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media (min-width:32rem) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:60rem) {
+  header h1 {
+    width: auto;
+  }
+  header nav {
+    width: auto;
+  }
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -308,6 +332,12 @@ header nav {
   header nav {
     padding: 1rem;
     font-size: 1rem;
+  }
+}
+
+@media (min-width:60rem) {
+  header nav {
+    width: auto;
   }
 }
 
@@ -344,20 +374,7 @@ footer a:focus-visible {
   outline: 2px solid var(--contrast-light);   
 }
 
-h1 {
-  font-size: 2rem;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  width: 100%;
-}
 
-@media (min-width:32rem) {
-  h1 {
-    font-size: 3rem;
-  }
-}
 
 h2 {
   font-size: 2.25rem;
