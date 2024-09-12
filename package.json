@@ -65,7 +65,7 @@
     "postcss-import": "14.1.0",
     "postcss-loader": "^7.3.3",
     "prettier": "2.8.8",
-    "qunit": "2.20.0",
+    "qunit": "2.22.0",
     "qunit-dom": "1.6.0",
     "webpack": "5"
   },
